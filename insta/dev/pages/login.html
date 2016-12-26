@@ -1,0 +1,25 @@
+<div class="col-md-6 col-md-offset-3 text-center">
+  <h1>Fire{ng}ram</h1>
+  <h2>Real-time Instagram</h2>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Autentique-se</div>
+    <div class="panel-body">
+      <form name="formulario"   data-ng-submit="vm.login(vm.usuario)" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" data-ng-model="vm.usuario.nome"  required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" name="email" data-ng-model="vm.usuario.email" required/>
+        </div>
+        {{ fomulario }}
+        <button type="submit" class="btn btn-primary btn-lg" data-ng-disabled="fomulario.$invalid">
+        FICA GRANDE PORRA
+      </button>
+      </form>
+    </div>
+  </div>
+
+</div>
